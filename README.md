@@ -39,32 +39,9 @@ Ao utilizar a arquitetura limpa houve um desacoplamento das regras de negócio, 
 
 ### Testes de Integração
 Os testes de integração consistiram em subir o servidor e validar o funcionamento das rotas. Sua implementação pode ser encontrada em `test/epp.e2e-spec.ts`. Basicamente são testadas as duas rotas disponíveis no servidor `web`.
-1. `/v1/batidas (POST)`, verifica se a rota para criar uma nova batida de ponto está funcionando
-2. `/v1/folhas-de-ponto (GET)`, verifica se a rota está respondendo com uma folha de ponto como o esperado
+1. `/v1/batidas (POST)`, cria uma nova batida, assim verificando se a rota está em funcionamento como o esperado
+2. `/v1/folhas-de-ponto (GET)`, busca uma folha de ponto e verifica se a rota respondeu corretamente os valores
 
 ### Documentação API
 
 Esse projeto seguiu a risca a documentação da `API` solicitada, assim, toda informação necessária estará descrita no arquivo `api.yaml` que pode ser aberto no `Swager Editor`.
-<!-- ## Documentação `API HTTP REST`
-### 1. Geração de relatório mensal de usuário.
-#### Rota
-`/v1/batidas (POST)`
-#### Exemplo de retorno de sucesso
-```json
-{
-  "dia": "2024-02-05",
-  "pontos": [
-    "08:00:00",
-    "12:00:00",
-    "13:00:00",
-    "18:00:00"
-  ]
-}
-```
-#### Exemplo de retorno de falha
-```json
-{
-  "mensagem": "Mensagem de erro..."
-}
-``` -->
- 
