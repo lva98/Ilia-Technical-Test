@@ -9,11 +9,11 @@ Programei tudo em português para seguir o padrão que foi solicitado.
 1. `git clone https://github.com/lva98/Ilia-Technical-Test`
 2. `cd Ilia-Technical-Test`
 3. `docker build -t ilia-technical-test .`
-4. `podman run -p 3000:3000 --name ilia-technical-test -it ilia-technical-test`
+4. `docker run -p 3000:3000 --name ilia-technical-test -it ilia-technical-test`
 
 ## Como executar os testes
-1. Para teste de integração execute `podman exec -it ilia-technical-test pnpm test:e2e`
-2. Para teste unitário execute `podman exec -it ilia-technical-test pnpm test`
+1. Para teste de integração execute `docker exec -it ilia-technical-test pnpm test:e2e`
+2. Para teste unitário execute `docker exec -it ilia-technical-test pnpm test`
 
 ## Testes
 
