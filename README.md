@@ -2,6 +2,8 @@
 
 O teste técnico da Ília consistiu no desenvolvimento de um servidor `http` de gerenciamento de cartão ponto.  Basicamente há duas rotas `/v1/folhas-de-ponto (GET)` e `/v1/batidas (POST)`, são responsáveis, respectivamente, por gerar relatório mensal do cartão ponto e criar uma nova batida. Embora seja um sistema simples, busquei utilizar arquitetura limpa para que o código seja de fácil compreensão e escalável, permitindo o aumento de sua complexidade. A pasta `dominio` é onde estão todas as regras de negócio, enquanto que a `infra` é parte específica para servidor `web` e persistência. Para simplificar o projeto, a persistencia é feita de forma local `infra/relogio-em-memoria.repositorio.ts`, entretanto, pode ser facilmente alterada para utilizar banco de dados. Já para o servidor `web` foi utilizado framework `NestJS`.
 
+#### Disclaimer
+Programei tudo em português para seguir o padrão que foi solicitado.
 
 ## Como executar o projeto
 1. `git clone https://github.com/lva98/Ilia-Technical-Test`
