@@ -42,6 +42,6 @@ Os testes de integração consistiram em subir o servidor e validar o funcioname
 1. `/v1/batidas (POST)`, cria uma nova batida, assim verificando se a rota está em funcionamento como o esperado
 2. `/v1/folhas-de-ponto (GET)`, busca uma folha de ponto e verifica se a rota respondeu corretamente os valores
 
-### Documentação API
+## Documentação API
 
 Esse projeto seguiu a risca a documentação da `API` solicitada, assim, toda informação necessária estará descrita no arquivo `api.yaml` que pode ser aberto no `Swager Editor`.
